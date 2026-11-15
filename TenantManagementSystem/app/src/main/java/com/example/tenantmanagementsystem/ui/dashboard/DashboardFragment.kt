@@ -6,10 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-// import androidx.fragment.app.activityViewModels
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.example.tenantmanagementsystem.databinding.FragmentDashboardBinding
-// import com.example.tenantmanagementsystem.ui.viewmodel.TenantViewModel
+import com.example.tenantmanagementsystem.ui.viewmodel.TenantViewModel
 
 class DashboardFragment : Fragment() {
 
