@@ -56,7 +56,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/addTenantButton"
+        android:id="@+id/AddTenantButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="ADD TENANT"
@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:text="VIEW TENANTS"
         android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@id/addTenantButton"
+        app:layout_constraintTop_toBottomOf="@id/AddTenantButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
