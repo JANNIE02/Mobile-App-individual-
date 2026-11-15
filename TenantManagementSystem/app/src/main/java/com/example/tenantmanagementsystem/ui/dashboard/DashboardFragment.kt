@@ -1,4 +1,4 @@
-package com.example.tenantmanagementsystem
+package com.example.tenantmanagementsystem.ui.dashboard
 
 import android.os.Bundle
 import android.util.Log

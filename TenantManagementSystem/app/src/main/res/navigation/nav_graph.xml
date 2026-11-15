@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/dashboardFragment"
-        android:name="com.example.tenantmanagementsystem.DashboardFragment"
+        android:name="com.example.tenantmanagementsystem.ui.dashboard.DashboardFragment"
         android:label="Dashboard"
         tools:layout="@layout/fragment_dashboard">
         <!-- Slide animations: new screen in, old screen out, and the reverse on Back -->
@@ -29,7 +29,7 @@
 
     <fragment
         android:id="@+id/addTenantFragment"
-        android:name="com.example.tenantmanagementsystem.AddTenantFragment"
+        android:name="com.example.tenantmanagementsystem.ui.tenants.AddTenantFragment"
         android:label="Add Tenant"
         tools:layout="@layout/fragment_add_tenant">
         <!-- popUpTo: remove Add Tenant from the back stack, so Back from
@@ -42,13 +42,13 @@
 
     <fragment
         android:id="@+id/viewTenantsFragment"
-        android:name="com.example.tenantmanagementsystem.ViewTenantsFragment"
+        android:name="com.example.tenantmanagementsystem.ui.tenants.ViewTenantsFragment"
         android:label="View Tenants"
         tools:layout="@layout/fragment_view_tenants">
         <!-- Optional: a tenant may be sent in from Add Tenant -->
         <argument
             android:name="newTenant"
-            app:argType="com.example.tenantmanagementsystem.Tenant"
+            app:argType="com.example.tenantmanagementsystem.data.model.Tenant"
             app:nullable="true"
             android:defaultValue="@null" />
     </fragment>

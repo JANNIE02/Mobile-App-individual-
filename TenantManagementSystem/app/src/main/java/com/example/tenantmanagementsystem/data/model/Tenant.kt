@@ -1,4 +1,4 @@
-package com.example.tenantmanagementsystem
+package com.example.tenantmanagementsystem.data.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

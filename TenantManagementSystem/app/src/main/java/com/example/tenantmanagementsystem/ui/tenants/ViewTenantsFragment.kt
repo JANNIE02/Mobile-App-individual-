@@ -1,4 +1,6 @@
-package com.example.tenantmanagementsystem
+package com.example.tenantmanagementsystem.ui.tenants
+
+import com.example.tenantmanagementsystem.data.repository.TenantRepository
 
 import android.content.Intent
 import android.net.Uri

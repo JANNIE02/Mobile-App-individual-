@@ -1,10 +1,12 @@
 package com.example.tenantmanagementsystem.data.local
 
+import com.example.tenantmanagementsystem.data.model.Tenant
+
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.tenantmanagementsystem.Tenant
+
 
 // Which tables the database holds, and its version number
 @Database(entities = [Tenant::class], version = 1)

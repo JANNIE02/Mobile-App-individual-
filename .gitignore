@@ -2,3 +2,7 @@
 *.iml
 build/
 local.properties
+
+*.jks
+
+*.keystore
