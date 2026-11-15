@@ -16,7 +16,7 @@ class DashboardFragment : Fragment() {
     private var _binding: FragmentDashboardBinding? = null
     private val binding get() = _binding!!
 
-    // private val viewModel: TenantViewModel by activityViewModels()
+     private val viewModel: TenantViewModel by activityViewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,8 +37,8 @@ class DashboardFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         Log.d("TENANT_LIFECYCLE", "DashboardFragment: onViewCreated")
 
-        // binding.viewModel = viewModel
-        // binding.lifecycleOwner = viewLifecycleOwner
+        binding.viewModel = viewModel
+         binding.lifecycleOwner = viewLifecycleOwner
 
         binding.AddTenantButton.setOnClickListener {
             val action = DashboardFragmentDirections.actionDashboardFragmentToAddTenantFragment()
