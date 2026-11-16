@@ -1,19 +1,15 @@
 package com.example.tenantmanagementsystem.data.repository
 
+import androidx.lifecycle.LiveData
+import com.example.tenantmanagementsystem.data.local.TenantDao
 import com.example.tenantmanagementsystem.data.model.Tenant
 
-// An object is a class with exactly one instance, shared by the whole app.
-// Dashboard, Add Tenant and View Tenants all see the same list.
-object TenantRepository {
+// The only door into the data layer: the ViewModel talks to this, not to the DAO
+class TenantRepository(private val tenantDao: TenantDao) {
 
-    val tenants = mutableListOf<Tenant>()
+    val tenants: LiveData<List<Tenant>> = tenantDao.getAllTenants()
 
-    fun addTenant(tenant: Tenant) {
-        tenants.add(tenant)
-    }
-
-    // Converts each rent to a number; invalid text counts as 0.0 instead of crashing
-    fun totalRent(): Double {
-        return tenants.sumOf { it.rent.toDoubleOrNull() ?: 0.0 }
+    suspend fun addTenant(tenant: Tenant) {
+        tenantDao.insertTenant(tenant)
     }
 }
